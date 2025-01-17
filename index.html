@@ -38,6 +38,27 @@
   </head>
 
 <body data-layout="generic" class="">
+    <div class="main-bar"> 
+        <button id="menu-open" type="button" class="button" aria-haspopup="dialog" aria-controls="siteMenu" aria-label="Apri il Menu" disabled> 
+            <i class="icon-nav"></i> 
+        </button> 
+        <a id="logo-rai" href="/"> 
+            <img src="media/Logo_of_RAI_(2016).svg" width=30 alt="Logo Rai" aria-label="logo rai" />
+            <span class="hide"> Rai </span> 
+        </a>   
+        <rainews-search-modal basepath=""><!---->
+            <button id="search-open" type="button" class="button" aria-label="cerca nel sito" aria-haspopup="dialo" disabled>
+            <i class="icon-search"></i>
+            </button>
+            <div id="searchModal" role="dialog" data-reveal="" class="search__modal reveal offscreen">
+            <button class="close-button search__modal__hide" aria-label="Chiudi la ricerca" type="button" disabled>
+                <span class="icon-close"></span>
+            </button>
+            </div>
+        </rainews-search-modal>  
+    </div>
+
+
 
     <main>
         <section class="leaf leaf--quiz">
